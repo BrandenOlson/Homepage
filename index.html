@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <title>Branden Olson's Homepage</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+		 <script src="div_handler.js">
+    </script>
+    <script>
+        $(function(){
+           $("#sidebar").load("sidebar.html");
+        });
+        $(function(){ $("#foot").load("foot.html");
+        });
+		$(function(){
+			$("#normal").load("normal.html");
+		});
+    </script>
+    </head>
+    <body>
+		<div id="header"></div>
+        <div id="page">
+            <div id="panel">
+                <div id="sidebar"></div>
+            </div>
+            <div id="maincontent">
+			<div id="normal"></div>
+				<div>
+                <p>
+                 Welcome! I am a second-year Ph.D. student in the <a href="https://www.stat.washington.edu/">Department of Statistics</a>
+                 at the <a href="https://www.washington.edu/">University of Washington, Seattle</a> who enjoys <a href="Images/BeaverCreek.jpg">snowboarding</a> and strong coffee.
+                </p>
+				</div>
+            </div>
+        <div id="foot"></div>
+        </div>
+    </body>
+	<script src="normal.js"></script>
+</html>
+
