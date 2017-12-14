@@ -8,7 +8,7 @@ function generateNormal() {
 }
 
 function draw(f, count, color) {
-    var total = 100;
+    var total = 100; // Determines the bar widths in the histogram
     var half = total/2;
     var numbers = [];
     for (var i = 0; i < total; i++) numbers[i] = 0;
@@ -34,7 +34,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-var count = 1500;
+var count = 500000; // The number of normal draws
 var cols = [];
 cols[1] = 143 
 cols[2] = 149 

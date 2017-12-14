@@ -42,14 +42,14 @@ a:hover {
 }
 
 #page {
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:10%;
+    margin-right:10%;
     margin-top:3%;
 }
 
 #maincontent {
     float: right;
-    width:50%;
+    width:60%;
 	height: 100%;
 }
 
@@ -72,13 +72,21 @@ a:hover {
     height: 100px;
 }
 
+#hover-content {
+    display: none;
+}
+
+#normal:hover #hover-content {
+    display: block;
+}
+
 #normal div {
     position: absolute;
     bottom: 0;
     /* width: 0.3vw; */
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
 	#panel {
 		float: top;
 		text-align: center;
