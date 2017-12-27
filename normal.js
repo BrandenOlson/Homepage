@@ -34,7 +34,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-var count = 500000; // The number of normal draws
+var count = 2000000; // The number of normal draws
 var cols = [];
 cols[1] = 143 
 cols[2] = 149 
