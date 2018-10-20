@@ -1,3 +1,18 @@
+<script type="text/javascript">
+// Figure out the current page and darken its tab in the sidebar
+$(function (){
+    $('#sidebar ul li#tab a').each(function(){
+        var path = window.location.href;
+        var current = path.substring(path.lastIndexOf('/')+1);
+        var url = $(this).attr('href');
+
+        if(url == current){
+            $(this).addClass('active');
+        };
+    });         
+});
+</script>
+
 <style>
 body {
     margin: 0;
@@ -34,7 +49,7 @@ table{
 #sidebar li a {
     display: block;
     color: #000;
-    padding: 16px 16px;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
@@ -57,10 +72,10 @@ table{
   <li><a href="index.html"><img width=100% src="Images/B.png"></a></li>
   <li><a style="font-size:25px;" href="index.html">Branden Olson</a></li>
   <hr>
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="bio.html">Bio</a></li>
-  <li><a href="research.html">Research</a></li>
-  <li><a href="contact.html">Contact</a></li>
+  <li id="tab"><a href="index.html">Home</a></li>
+  <li id="tab"><a href="bio.html">Bio</a></li>
+  <li id="tab"><a href="research.html">Research</a></li>
+  <li id="tab"><a href="contact.html">Contact</a></li>
   <li><a href="BrandenOlsonCV.pdf">CV</a></li>
   <hr>
   <li>
