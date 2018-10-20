@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <title>Branden Olson's Homepage</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+		 <script src="div_handler.js">
+    </script>
+    <script>
+        $(function(){
+           $("#sidebar").load("sidebar.html");
+        });
+        $(function(){ $("#foot").load("foot.html");
+        });
+    </script>
+    </head>
+    <body>
+		<div id="header"></div>
+            <div id="panel">
+                <div id="sidebar"></div>
+            </div>
+            <div id="maincontent">
+                <h2>Contact</h2>
+                <p>
+	E-mail: brando6 at uw dot edu
+	<br> <br>
+	UW office: A-314, Padelford Hall
+	<br> <br>
+	Fred Hutch office: M1-B855, Arnold Building
+                </p>
+            </div>
+    </body>
+</html>
+

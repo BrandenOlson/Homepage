@@ -3,6 +3,11 @@ html {
 	overflow: auto;
 }
 
+p ul li
+{
+    background-color: white;
+}
+
 h1, h2, h3
 {
     margin-top: 0;
@@ -49,13 +54,12 @@ a:hover {
 }
 
 #maincontent {
-    float: right;
-    width:60%;
-	height: 100%;
+    margin-left: 25%;
+    padding: 3% 5% 5% 0%;
+    height: 100%;
 }
 
 #panel {
-    float: left;
 }
 
 #foot {
@@ -71,7 +75,7 @@ a:hover {
 
 #normal {
     position: relative;
-    height: 100px;
+    height: 50%;
 }
 
 #hover-content {
@@ -89,20 +93,4 @@ a:hover {
 }
 
 @media screen and (max-width: 1150px) {
-	#panel {
-		float: top;
-		text-align: center;
-		margin: auto;
-		width: 100%;
-	}
-
-	table {
-		margin: 0 auto;
-	}
-
-	#maincontent {
-		float: bottom;
-		width: 100%;
-		margin: auto;
-	}
 }
