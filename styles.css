@@ -15,6 +15,7 @@ p, li {
     text-align: justify;
     font-family: Geneva, Arial, Helvetica, sans-serif;
     margin-top: 8px;
+    font-size: 100%;
 }
 
 #text {
@@ -64,6 +65,7 @@ a:hover {
 }
 
 .links {
+    float: center;
     text-align: center;
 }
 
