@@ -6,7 +6,7 @@ $(function (){
         var current = path.substring(path.lastIndexOf('/')+1);
         var url = $(this).attr('href');
 
-        if(url == current){
+        if(url == current || (current == "" && url == "index.html")){
             $(this).addClass('active');
         };
     });         
@@ -30,19 +30,20 @@ body {
     font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
-table{
+li table{
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 18%;
     background-color: #f1f1f1;
     position: fixed;
-    height: 100%;
     font-family: Geneva, Arial, Helvetica, sans-serif;
     table-layout: fixed;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
-table td {
+li table td {
     word-wrap: break-word;
 }
 
